@@ -1,1 +1,1 @@
-fr
+from django.shortcuts import render, redirec
