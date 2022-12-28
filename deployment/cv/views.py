@@ -6,4 +6,5 @@ from django.template import loader
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 
-from tensorflow.
+from tensorflow.keras.applications.vgg16 import VGG16
+from tenso
