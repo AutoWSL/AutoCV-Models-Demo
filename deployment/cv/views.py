@@ -8,4 +8,7 @@ from django.conf import settings
 
 from tensorflow.keras.applications.vgg16 import VGG16
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predict
+from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
+
+import torch
+from torchvision i
