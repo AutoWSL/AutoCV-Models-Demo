@@ -17,4 +17,6 @@ from PIL import Image
 import numpy as np
 import cv2
 
-def base(reque
+def base(request):
+        
+    return render(reques
