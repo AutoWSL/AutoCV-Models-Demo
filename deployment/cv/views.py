@@ -12,4 +12,6 @@ from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predict
 
 import torch
 from torchvision import models
-import torchvision.tran
+import torchvision.transforms as T
+from PIL import Image
+import n
