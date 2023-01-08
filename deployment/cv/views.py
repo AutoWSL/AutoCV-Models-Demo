@@ -19,4 +19,7 @@ import cv2
 
 def base(request):
         
-    return render(reques
+    return render(request, 'cv/base.html')        
+
+
+def clas
