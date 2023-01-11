@@ -22,4 +22,5 @@ def base(request):
     return render(request, 'cv/base.html')        
 
 
-def clas
+def classification(request):
+    if reques
