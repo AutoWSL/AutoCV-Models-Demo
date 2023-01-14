@@ -23,4 +23,4 @@ def base(request):
 
 
 def classification(request):
-    if reques
+    if request.method == 'POST' and request.FILES['my
