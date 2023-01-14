@@ -26,4 +26,5 @@ def classification(request):
     if request.method == 'POST' and request.FILES['myfile']:
         
         myfile = request.FILES['myfile']
-        fs = FileSyst
+        fs = FileSystemStorage()
+        filename = fs.save(
