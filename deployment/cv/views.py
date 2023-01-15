@@ -31,4 +31,5 @@ def classification(request):
         img_file = fs.url(filename)
         
         # `img` is a PIL image of size 224x224
-        img_file_ = settings.BASE_DIR + '/' + 
+        img_file_ = settings.BASE_DIR + '/' + img_file
+        img = image.
