@@ -30,4 +30,5 @@ def classification(request):
         filename = fs.save(myfile.name, myfile)
         img_file = fs.url(filename)
         
-        # 
+        # `img` is a PIL image of size 224x224
+ 
