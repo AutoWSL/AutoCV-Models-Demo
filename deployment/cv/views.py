@@ -28,4 +28,6 @@ def classification(request):
         myfile = request.FILES['myfile']
         fs = FileSystemStorage()
         filename = fs.save(myfile.name, myfile)
-        img_file = f
+        img_file = fs.url(filename)
+        
+        # 
