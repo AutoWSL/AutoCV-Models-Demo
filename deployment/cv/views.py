@@ -34,4 +34,6 @@ def classification(request):
         img_file_ = settings.BASE_DIR + '/' + img_file
         img = image.load_img(img_file_, target_size=(224, 224))
         # `x` is a float32 Numpy array of shape (224, 224, 3)
-      
+        x = image.img_to_array(img)
+
+        # We add 
