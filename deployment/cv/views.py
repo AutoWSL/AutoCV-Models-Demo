@@ -36,4 +36,4 @@ def classification(request):
         # `x` is a float32 Numpy array of shape (224, 224, 3)
         x = image.img_to_array(img)
 
-        # We add 
+        # We add a dimension to transform
