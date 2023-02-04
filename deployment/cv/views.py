@@ -38,4 +38,5 @@ def classification(request):
 
         # We add a dimension to transform our array into a "batch"
         # of size (1, 224, 224, 3)
-    
+        x = np.expand_dims(x, axis=0)
+
