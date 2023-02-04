@@ -40,4 +40,5 @@ def classification(request):
         # of size (1, 224, 224, 3)
         x = np.expand_dims(x, axis=0)
 
-        # Finally we preprocess the bat
+        # Finally we preprocess the batch
+        # (this does channel-wi
