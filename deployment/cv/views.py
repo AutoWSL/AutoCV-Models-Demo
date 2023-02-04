@@ -37,4 +37,5 @@ def classification(request):
         x = image.img_to_array(img)
 
         # We add a dimension to transform our array into a "batch"
-        #
+        # of size (1, 224, 224, 3)
+    
