@@ -41,4 +41,5 @@ def classification(request):
         x = np.expand_dims(x, axis=0)
 
         # Finally we preprocess the batch
-        # (this does channel-wi
+        # (this does channel-wise color normalization)
+        x = preprocess_input(x
