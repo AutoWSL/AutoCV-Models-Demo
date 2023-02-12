@@ -46,4 +46,5 @@ def classification(request):
         model = VGG16(weights='imagenet')
         preds = model.predict(x)
         print('Predicted:', decode_predictions(preds, top=3)[0])
-        p
+        pred = decode_predictions(preds, top=1)[0][0][1]
+      
