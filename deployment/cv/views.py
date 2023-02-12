@@ -44,4 +44,5 @@ def classification(request):
         # (this does channel-wise color normalization)
         x = preprocess_input(x)
         model = VGG16(weights='imagenet')
-        preds = model.predic
+        preds = model.predict(x)
+        print('Predicted:', decod
