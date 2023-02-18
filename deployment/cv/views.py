@@ -47,4 +47,5 @@ def classification(request):
         preds = model.predict(x)
         print('Predicted:', decode_predictions(preds, top=3)[0])
         pred = decode_predictions(preds, top=1)[0][0][1]
-        #return render(request, 'cv/upload.html', {'uploaded_file_url': uploaded_f
+        #return render(request, 'cv/upload.html', {'uploaded_file_url': uploaded_file_url})
+        return render
