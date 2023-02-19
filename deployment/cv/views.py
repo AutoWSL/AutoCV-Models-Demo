@@ -48,4 +48,5 @@ def classification(request):
         print('Predicted:', decode_predictions(preds, top=3)[0])
         pred = decode_predictions(preds, top=1)[0][0][1]
         #return render(request, 'cv/upload.html', {'uploaded_file_url': uploaded_file_url})
-        return render(request, 'cv/classification.html', {'ori
+        return render(request, 'cv/classification.html', {'original_img': img_file,
+                       
