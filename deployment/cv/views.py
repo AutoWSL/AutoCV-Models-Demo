@@ -51,4 +51,7 @@ def classification(request):
         return render(request, 'cv/classification.html', {'original_img': img_file,
                                                             'prediction': pred})
         
-    return render(request, 'cv/classification.htm
+    return render(request, 'cv/classification.html')        
+
+def load_model():
+  
