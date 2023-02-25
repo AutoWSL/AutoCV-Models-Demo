@@ -51,4 +51,4 @@ def classification(request):
         return render(request, 'cv/classification.html', {'original_img': img_file,
                                                             'prediction': pred})
         
-    r
+    return render(request, 'cv/classification.htm
