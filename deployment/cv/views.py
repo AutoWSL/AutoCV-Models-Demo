@@ -54,4 +54,5 @@ def classification(request):
     return render(request, 'cv/classification.html')        
 
 def load_model():
-  
+    # load the model for inference 
+ 
