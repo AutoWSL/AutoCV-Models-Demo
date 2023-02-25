@@ -55,4 +55,5 @@ def classification(request):
 
 def load_model():
     # load the model for inference 
-    model = models.segmentation.f
+    model = models.segmentation.fcn_resnet101(pretrained=True).eval()
+  
