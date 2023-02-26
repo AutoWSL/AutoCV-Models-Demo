@@ -59,4 +59,5 @@ def load_model():
     return model
 
 def get_segmentation(img_file, model):
-    input_image = Ima
+    input_image = Image.open(img_file)
+    preprocess = T
