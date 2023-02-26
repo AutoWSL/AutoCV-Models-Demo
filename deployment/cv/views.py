@@ -60,4 +60,6 @@ def load_model():
 
 def get_segmentation(img_file, model):
     input_image = Image.open(img_file)
-    preprocess = T
+    preprocess = T.Compose([
+        T.ToTensor(),
+      
