@@ -58,4 +58,5 @@ def load_model():
     model = models.segmentation.fcn_resnet101(pretrained=True).eval()
     return model
 
-def get_segmentation
+def get_segmentation(img_file, model):
+    input_image = Ima
