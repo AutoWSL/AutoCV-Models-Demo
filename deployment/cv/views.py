@@ -66,4 +66,5 @@ def get_segmentation(img_file, model):
     ])
 
     input_tensor = preprocess(input_image)
-    input_batch = input_tensor.unsqueeze(0) # create a min
+    input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
+
