@@ -65,4 +65,5 @@ def get_segmentation(img_file, model):
         T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
 
-    input_tensor = preproc
+    input_tensor = preprocess(input_image)
+    input_batch = inp
