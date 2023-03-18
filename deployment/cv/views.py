@@ -69,4 +69,5 @@ def get_segmentation(img_file, model):
     input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
 
     # move the input and model to GPU for speed if available
-    if torch.cu
+    if torch.cuda.is_available():
+        input_batch = input_batch.to('cu
