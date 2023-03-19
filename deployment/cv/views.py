@@ -74,4 +74,5 @@ def get_segmentation(img_file, model):
         model.to('cuda')
 
     with torch.no_grad():
-        output = mode
+        output = model(input_batch)['out'][0]
+ 
