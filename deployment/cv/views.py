@@ -70,4 +70,7 @@ def get_segmentation(img_file, model):
 
     # move the input and model to GPU for speed if available
     if torch.cuda.is_available():
-        input_batch = input_batch.to('cu
+        input_batch = input_batch.to('cuda')
+        model.to('cuda')
+
+    wit
