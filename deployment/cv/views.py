@@ -76,3 +76,7 @@ def get_segmentation(img_file, model):
     with torch.no_grad():
         output = model(input_batch)['out'][0]
     output_predictions = output.argmax(0)
+    return output_predictions
+
+
+label
