@@ -79,4 +79,5 @@ def get_segmentation(img_file, model):
     return output_predictions
 
 
-label_colors = np.array([(0, 
+label_colors = np.array([(0, 0, 0),  # 0=background
+         
