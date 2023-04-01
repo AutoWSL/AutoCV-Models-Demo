@@ -81,4 +81,5 @@ def get_segmentation(img_file, model):
 
 label_colors = np.array([(0, 0, 0),  # 0=background
               # 1=aeroplane, 2=bicycle, 3=bird, 4=boat, 5=bottle
-              (128, 0, 0), (0, 128, 0), (128, 128, 0), (0, 0, 128), (128
+              (128, 0, 0), (0, 128, 0), (128, 128, 0), (0, 0, 128), (128, 0, 128),
+              # 6=bus, 7=c
