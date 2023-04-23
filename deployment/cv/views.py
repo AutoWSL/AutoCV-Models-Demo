@@ -90,4 +90,5 @@ label_colors = np.array([(0, 0, 0),  # 0=background
               (0, 64, 0), (128, 64, 0), (0, 192, 0), (128, 192, 0), (0, 64, 128)])
 
 def seg2rgb(preds):
-    colors 
+    colors = label_colors
+    colors = 
