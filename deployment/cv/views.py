@@ -94,4 +94,4 @@ def seg2rgb(preds):
     colors = label_colors.astype("uint8")
 
     # plot the semantic segmentation predictions of 21 classes in each color
-    rgb = Image.fromarray(pred
+    rgb = Image.fromarray(preds.byte().cpu().numpy())#.resize(preds.sh
