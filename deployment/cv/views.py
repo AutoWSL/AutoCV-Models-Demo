@@ -93,4 +93,5 @@ def seg2rgb(preds):
     colors = label_colors
     colors = label_colors.astype("uint8")
 
-    # plot the semantic segmentation predictions of 21 classes in eac
+    # plot the semantic segmentation predictions of 21 classes in each color
+    rgb = Image.fromarray(pred
