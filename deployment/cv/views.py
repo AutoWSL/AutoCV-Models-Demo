@@ -92,3 +92,5 @@ label_colors = np.array([(0, 0, 0),  # 0=background
 def seg2rgb(preds):
     colors = label_colors
     colors = label_colors.astype("uint8")
+
+    # plot the semantic segmentat
