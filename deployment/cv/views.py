@@ -99,4 +99,5 @@ def seg2rgb(preds):
     return rgb
 
 
-def semantic_segmentati
+def semantic_segmentation(request):
+    if request.method == 
