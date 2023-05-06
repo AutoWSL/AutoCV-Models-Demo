@@ -101,4 +101,5 @@ def seg2rgb(preds):
 
 def semantic_segmentation(request):
     if request.method == 'POST' and request.FILES['myfile']:
-      
+        
+        myfile = request.FIL
