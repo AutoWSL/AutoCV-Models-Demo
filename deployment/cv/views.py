@@ -105,4 +105,6 @@ def semantic_segmentation(request):
         myfile = request.FILES['myfile']
         fs = FileSystemStorage()
         filename = fs.save(myfile.name, myfile)
-        img_file = fs.url(filename
+        img_file = fs.url(filename)
+        
+        # `img` is a PIL image of siz
