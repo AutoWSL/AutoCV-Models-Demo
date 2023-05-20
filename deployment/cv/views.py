@@ -103,4 +103,5 @@ def semantic_segmentation(request):
     if request.method == 'POST' and request.FILES['myfile']:
         
         myfile = request.FILES['myfile']
-        fs = FileSystemStor
+        fs = FileSystemStorage()
+        filename = fs.save(myfile.name, myfi
