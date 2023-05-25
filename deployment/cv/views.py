@@ -110,4 +110,5 @@ def semantic_segmentation(request):
         # `img` is a PIL image of size 224x224
         img_file_ = settings.BASE_DIR + '/' + img_file
         img = Image.open(img_file_)
-  
+        model = load_model()
+        preds =
