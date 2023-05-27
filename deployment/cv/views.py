@@ -112,4 +112,6 @@ def semantic_segmentation(request):
         img = Image.open(img_file_)
         model = load_model()
         preds = get_segmentation(img_file_, model)
-  
+        rgb = seg2rgb(preds)
+        
+      
