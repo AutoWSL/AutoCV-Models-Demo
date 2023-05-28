@@ -117,4 +117,5 @@ def semantic_segmentation(request):
         seg_file = settings.MEDIA_ROOT + '/seg_img.png' 
         rgb.save(seg_file)
 
-        return render(request, 'cv/semantic_segmentatio
+        return render(request, 'cv/semantic_segmentation.html', {'original_img': img_file,
+        
