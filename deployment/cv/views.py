@@ -115,4 +115,6 @@ def semantic_segmentation(request):
         rgb = seg2rgb(preds)
         
         seg_file = settings.MEDIA_ROOT + '/seg_img.png' 
-        rgb.save
+        rgb.save(seg_file)
+
+        return r
