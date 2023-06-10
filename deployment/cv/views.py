@@ -120,4 +120,4 @@ def semantic_segmentation(request):
         return render(request, 'cv/semantic_segmentation.html', {'original_img': img_file,
                                                                  'segmented_img': '/media/seg_img.png'})
         
-    return rende
+    return render(request, 'cv/semantic_segmentation
