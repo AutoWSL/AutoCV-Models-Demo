@@ -120,4 +120,6 @@ def semantic_segmentation(request):
         return render(request, 'cv/semantic_segmentation.html', {'original_img': img_file,
                                                                  'segmented_img': '/media/seg_img.png'})
         
-    return render(request, 'cv/semantic_segmentation
+    return render(request, 'cv/semantic_segmentation.html')  
+
+COCO_INSTANCE_CATEGORY_NAMES
