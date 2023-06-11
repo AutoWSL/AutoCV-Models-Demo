@@ -123,4 +123,4 @@ def semantic_segmentation(request):
     return render(request, 'cv/semantic_segmentation.html')  
 
 COCO_INSTANCE_CATEGORY_NAMES = [
-    '__background__', 'person
+    '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'ai
