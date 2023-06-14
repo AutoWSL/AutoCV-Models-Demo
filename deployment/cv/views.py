@@ -124,4 +124,4 @@ def semantic_segmentation(request):
 
 COCO_INSTANCE_CATEGORY_NAMES = [
     '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
-    'train', 'truck', 'b
+    'train', 'truck', 'boat', 'traffic light', 'fire hydrant
