@@ -128,4 +128,4 @@ COCO_INSTANCE_CATEGORY_NAMES = [
     'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
     'elephant', 'bear', 'zebra', 'giraffe', 'N/A', 'backpack', 'umbrella', 'N/A', 'N/A',
     'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball',
-    'kite', 'baseball bat'
+    'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surf
