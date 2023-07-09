@@ -133,4 +133,4 @@ COCO_INSTANCE_CATEGORY_NAMES = [
     'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza',
     'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'N/A', 'dining table',
     'N/A', 'N/A', 'toilet', 'N/A', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
-    'microwave',
+    'microwave', 'oven', 'toaster', 'sink', 'refrigerator'
