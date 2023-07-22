@@ -134,4 +134,4 @@ COCO_INSTANCE_CATEGORY_NAMES = [
     'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'N/A', 'dining table',
     'N/A', 'N/A', 'toilet', 'N/A', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
     'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'N/A', 'book',
-    'clock', 'vase', 'scissors', 'teddy bear'
+    'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
