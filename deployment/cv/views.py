@@ -138,4 +138,4 @@ COCO_INSTANCE_CATEGORY_NAMES = [
 ]
 
 def get_prediction(img_path, threshold):
- 
+    img = Image.open(img_path) # Load the im
