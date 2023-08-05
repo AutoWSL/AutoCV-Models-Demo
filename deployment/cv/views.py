@@ -142,4 +142,5 @@ def get_prediction(img_path, threshold):
     transform = T.Compose([T.ToTensor()]) # Defing PyTorch Transform
     img = transform(img) # Apply the transform to the image
     model = models.detection.fasterrcnn_resnet50_fpn(pretrained=True).eval()
-    pred = model
+    pred = model([img]) # Pass the image to the model
+   
