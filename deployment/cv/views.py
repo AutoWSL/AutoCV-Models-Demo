@@ -144,4 +144,4 @@ def get_prediction(img_path, threshold):
     model = models.detection.fasterrcnn_resnet50_fpn(pretrained=True).eval()
     pred = model([img]) # Pass the image to the model
     pred_class = [COCO_INSTANCE_CATEGORY_NAMES[i] for i in list(pred[0]['labels'].numpy())] # Get the Prediction Score
-    pred_boxes = [[(i[0], i[1]), (i[
+    pred_boxes = [[(i[0], i[1]), (i[2], i[3])] for i in list(pred[0]['box
