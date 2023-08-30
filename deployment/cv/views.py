@@ -147,4 +147,5 @@ def get_prediction(img_path, threshold):
     pred_boxes = [[(i[0], i[1]), (i[2], i[3])] for i in list(pred[0]['boxes'].detach().numpy())] # Bounding boxes
     pred_score = list(pred[0]['scores'].detach().numpy())
     pred_t = [pred_score.index(x) for x in pred_score if x > threshold][-1] # Get list of index with score greater than threshold.
-   
+    pred_boxes = pred_boxes[:pred_t+1]
+    
