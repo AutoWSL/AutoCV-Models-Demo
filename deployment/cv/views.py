@@ -149,4 +149,7 @@ def get_prediction(img_path, threshold):
     pred_t = [pred_score.index(x) for x in pred_score if x > threshold][-1] # Get list of index with score greater than threshold.
     pred_boxes = pred_boxes[:pred_t+1]
     pred_class = pred_class[:pred_t+1]
-   
+    return pred_boxes, pred_class
+
+
+def o
