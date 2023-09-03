@@ -152,4 +152,5 @@ def get_prediction(img_path, threshold):
     return pred_boxes, pred_class
 
 
-def o
+def object_detection(request):
+    if request.metho
