@@ -153,4 +153,6 @@ def get_prediction(img_path, threshold):
 
 
 def object_detection(request):
-    if request.method == 'POST' and request.FILES['myfile']
+    if request.method == 'POST' and request.FILES['myfile']:
+        
+        myfile = request.FILES
