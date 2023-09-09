@@ -157,3 +157,4 @@ def object_detection(request):
         
         myfile = request.FILES['myfile']
         fs = FileSystemStorage()
+        filename = fs.save(myfile.name, myf
