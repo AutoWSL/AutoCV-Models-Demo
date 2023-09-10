@@ -161,4 +161,6 @@ def object_detection(request):
         img_file = fs.url(filename)
         
         rect_th = 1 
-        text_s
+        text_size = 0.2
+        text_th = 1
+        im
