@@ -157,4 +157,6 @@ def object_detection(request):
         
         myfile = request.FILES['myfile']
         fs = FileSystemStorage()
-        filename = fs.save(myfile.name, myf
+        filename = fs.save(myfile.name, myfile)
+        img_file = fs.url(filename)
+     
