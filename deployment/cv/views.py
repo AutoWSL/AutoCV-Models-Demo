@@ -163,4 +163,4 @@ def object_detection(request):
         rect_th = 1 
         text_size = 0.2
         text_th = 1
-        im
+        img_file_ = settings.BASE_DIR + '/' + img_
