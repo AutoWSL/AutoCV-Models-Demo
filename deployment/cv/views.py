@@ -163,4 +163,5 @@ def object_detection(request):
         rect_th = 1 
         text_size = 0.2
         text_th = 1
-        img_file_ = settings.BASE_DIR + '/' + img_
+        img_file_ = settings.BASE_DIR + '/' + img_file
+        boxes, pred_cls = get_predi
