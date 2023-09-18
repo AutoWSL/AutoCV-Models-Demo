@@ -164,4 +164,5 @@ def object_detection(request):
         text_size = 0.2
         text_th = 1
         img_file_ = settings.BASE_DIR + '/' + img_file
-        boxes, pred_cls = get_prediction(img_file_, threshold=0.8) # Get
+        boxes, pred_cls = get_prediction(img_file_, threshold=0.8) # Get predictions
+        img = 
