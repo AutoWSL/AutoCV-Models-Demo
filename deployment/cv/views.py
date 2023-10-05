@@ -169,4 +169,5 @@ def object_detection(request):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # Convert to RGB
         #plt.imshow(img)
         #plt.show()
-        for box, cls in zip(boxes, pred_cls):#ra
+        for box, cls in zip(boxes, pred_cls):#range(len(boxes)):
+            cv2.rec
