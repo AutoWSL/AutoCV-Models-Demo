@@ -170,4 +170,4 @@ def object_detection(request):
         #plt.imshow(img)
         #plt.show()
         for box, cls in zip(boxes, pred_cls):#range(len(boxes)):
-            cv2.rectangle(img, box[0], box[1],color=(
+            cv2.rectangle(img, box[0], box[1],color=(0, 255, 0), thickness=rect_th) # Draw Rectangle with
