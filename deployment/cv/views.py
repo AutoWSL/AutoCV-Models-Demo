@@ -174,4 +174,5 @@ def object_detection(request):
             cv2.putText(img,cls, box[0],  cv2.FONT_HERSHEY_SIMPLEX, text_size, (0,255,0),thickness=text_th) # Write the prediction class
         
         
-        obb_file = settings.MEDIA_RO
+        obb_file = settings.MEDIA_ROOT + '/obb_img.png' 
+        cv2.imw
