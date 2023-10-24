@@ -177,3 +177,4 @@ def object_detection(request):
         obb_file = settings.MEDIA_ROOT + '/obb_img.png' 
         cv2.imwrite(obb_file, img)
 
+        return render(request, 'cv/object_de
