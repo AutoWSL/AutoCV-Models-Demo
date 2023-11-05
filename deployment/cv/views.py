@@ -178,4 +178,4 @@ def object_detection(request):
         cv2.imwrite(obb_file, img)
 
         return render(request, 'cv/object_detection.html', {'original_img': img_file,
-                                    
+                                                            'obb_img': '/medi
