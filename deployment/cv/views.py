@@ -180,4 +180,4 @@ def object_detection(request):
         return render(request, 'cv/object_detection.html', {'original_img': img_file,
                                                             'obb_img': '/media/obb_img.png'})
         
-    return 
+    return render(request, 'cv/object_detection.htm
