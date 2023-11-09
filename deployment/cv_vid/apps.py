@@ -1,1 +1,4 @@
-from dja
+from django.apps import AppConfig
+
+
+class CvVid
