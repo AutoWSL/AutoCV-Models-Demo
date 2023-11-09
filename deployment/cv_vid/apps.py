@@ -1,4 +1,5 @@
 from django.apps import AppConfig
 
 
-class CvVid
+class CvVidConfig(AppConfig):
+    name = 'cv_vid'
