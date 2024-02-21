@@ -68,3 +68,44 @@ def seg2rgb(preds):
 
     # plot the semantic segmentation predictions of 21 classes in each color
     rgb = Image.fromarray(preds.byte().cpu().numpy())#.resize(preds.shape)
+    rgb.putpalette(colors)
+    rgb = rgb.convert('RGB')
+    return rgb
+
+
+def semantic_segmentation(request):
+    if request.method == 'POST' and request.FILES['myfile']:
+        
+        myfile = request.FILES['myfile']
+        fs = FileSystemStorage()
+        filename = fs.save(myfile.name, myfile)
+        video_file = fs.url(filename)
+
+        video_file_ = settings.BASE_DIR + '/' + video_file
+            
+        model = load_model()
+        video_output = 'output.mp4'
+
+        clip = VideoFileClip(video_file_)
+        
+        def process_frame(frame):        
+            #img = Image.open(img_file_)
+            #img = cv2.imread(filename)
+            #img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+            return get_segmentation(frame, model)
+        
+        video_output = settings.MEDIA_ROOT + '/seg_vid.mp4'
+        seg_clip = clip.fl_image(process_frame)
+        seg_clip.write_videofile(video_output, audio=False)
+
+
+        return render(request, 'cv_vid/semantic_segmentation.html', {'original_vid': video_file,
+                                                                     'segmented_vid': '/media/seg_vid.mp4'})
+    return render(request, 'cv_vid/semantic_segmentation.html')  
+
+COCO_INSTANCE_CATEGORY_NAMES = [
+    '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
+    'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'N/A', 'stop sign',
+    'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+    'elephant', 'bear', 'zebra', 'giraffe', 'N/A', 'backpack', 'umbrella', 'N/A', 'N/A',
