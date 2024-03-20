@@ -1,1 +1,3 @@
-"""deployment URL Confi
+"""deployment URL Configuration
+
+The `urlpatterns` list routes 
