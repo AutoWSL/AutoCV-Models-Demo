@@ -1,3 +1,4 @@
 """deployment URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information ple
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoprojec
