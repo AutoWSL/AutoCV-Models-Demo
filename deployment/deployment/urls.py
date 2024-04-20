@@ -20,3 +20,4 @@ from django.conf import settings
 
 urlpatterns = [
     path('cv/', include('cv.urls')),
+    path('cv_vid/', include('
