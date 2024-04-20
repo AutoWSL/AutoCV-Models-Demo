@@ -21,4 +21,6 @@ from django.conf import settings
 urlpatterns = [
     path('cv/', include('cv.urls')),
     path('cv_vid/', include('cv_vid.urls')),
-    path('admin/', admi
+    path('admin/', admin.site.urls),
+]
+urlpatterns += static
