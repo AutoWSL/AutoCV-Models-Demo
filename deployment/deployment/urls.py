@@ -23,4 +23,4 @@ urlpatterns = [
     path('cv_vid/', include('cv_vid.urls')),
     path('admin/', admin.site.urls),
 ]
-urlpatterns += static
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.M
